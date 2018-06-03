@@ -7,42 +7,122 @@
     <title>Digital Styleguide - Eindopdracht NMD-I</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="./css/pages.css">
+    <style>
+        .button {
+            background-color: rgb(172, 156, 109);
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .button2{
+            background-color: rgb(112, 112, 112);
+        }
+        
+        .gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 32%;
+        }
+
+        .gallery:hover {
+            border: 1px solid #777;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+        }
+        a:link {
+            text-decoration: none;
+            color: rgb(112, 112, 112);
+        }
+        a:visited {
+            color: rgb(112, 112, 112);
+        }
+        .nav{
+            text-align: center;
+            font-weight: bold;
+            float: left;
+        }
+
+</style>
 </head>
 <body>
     <h1>Digital Styleguide</h1>
-    <div>
-        <h2>Kleuren</h2>
-        <img src="./images/geel.png" alt="">
-        <p>CMYK: 32, 30, 60, 12</p>
-        <p>RGB: 172, 156, 109</p>
-        <img src="./images/donkergrijs.png" alt="">
-        <p>CMYK: 53, 43, 42, 28</p>
-        <p>RGB: 112, 112, 112</p>
-        <img src="./images/Lichtgrijs.png" alt="">
-        <p>CMYK: 19, 14, 15, 0</p>
-        <p>RGB: 213, 213, 213</p>
-    </div>
 
-    <div>
-        <h2>Fonts</h2>
-        <p>Source Sans Pro</p>
+    <h2>Kleuren</h2>
+    
+    <!--Kleuren -->
+    <div class="gallery">
+        <a target="_blank" href="./images/geel.png">
+          <img src="./images/geel.png" alt="geel" width="300" height="200">
+        </a>
+        <div class="desc">
+            <p>CMYK: 32, 30, 60, 12</p>
+            <p>RGB: 172, 156, 109</p>
+        </div>
     </div>
+      
+    <div class="gallery">
+        <a target="_blank" href="./images/donkergrijs.png">
+          <img src="./images/donkergrijs.png" alt="donkergrijs" width="300" height="200">
+        </a>
+        <div class="desc">
+            <p>CMYK: 53, 43, 42, 28</p>
+            <p>RGB: 112, 112, 112</p>
+        </div>
+    </div>
+      
+    <div class="gallery">
+        <a target="_blank" href="./images/Lichtgrijs.png">
+          <img src="./images/Lichtgrijs.png" alt="lichtgrijs" width="300" height="200">
+        </a>
+        <div class="desc">
+            <p>CMYK: 19, 14, 15, 0</p>
+            <p>RGB: 213, 213, 213</p>
+        </div>
+    </div>
+   
 
+    <!--Fonts -->
+    <h2>Fonts</h2>
+    <p>Source Sans Pro</p>
+    
+    <!--Logo -->
     <div>
         <h2>Logo</h2>
-        <img src="./images/TYRO.png" alt="">
+        <img src="./images/logo.png" height="100" width="100">
     </div>
 
+    <!--Knoppen-->
     <div>
         <h2>Knoppen</h2>
-        <img src="./images/Knop1.png" alt="">
-        <img src="./images/Knop2.png" alt="">
-        <img src="./images/Knop3.png" alt="">
+        <button class="button">CHECK LINE-UP</button>
+        <button class="button button2">BUY TICKET</button>
+        <button class="button">OK</button>
     </div>
 
-    <div>
-        <h2>Navigatie</h2>
-        <img src="./images/nav.png" alt="">
+    <!--navigatie-->
+    <h2>Navigatie</h2>
+    <div class="nav">
+        <a href="">HOME</a><br>
+        <a href="">LINE-UP</a><br>
+        <a href="">TICKETS</a><br>
+        <a href="">PRACTICAL INFO</a><br>
+        <a href=""><img src="./images/menu.png" height="50" width="50"></a> 
     </div>
 
 </body>
