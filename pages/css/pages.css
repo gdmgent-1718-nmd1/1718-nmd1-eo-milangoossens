@@ -15,4 +15,8 @@ img {
     max-width: 100%; /* Afbeeldingen responsive maken */
 }
 
+h2{
+    font-size: smaller;
+}
+
 /* Voeg jouw css hieraan toe */
